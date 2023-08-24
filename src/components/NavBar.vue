@@ -1,9 +1,7 @@
 <template>
    <v-app-bar app color="black" dark flat class="px-10">
       <v-row justify="space-between">
-         <div class="w-1/3">
-            <v-btn >Branden</v-btn>
-         </div>
+         <v-btn >Branden</v-btn>
          <v-btn text @click="scroll('home')" class="text-green">Home</v-btn>
          <v-btn text @click="scroll('about')" class="text-green">About</v-btn>
          <v-btn text @click="scroll('education')" class="text-green">Education</v-btn>
