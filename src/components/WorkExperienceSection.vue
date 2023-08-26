@@ -9,7 +9,7 @@
                   </div>
                </v-col>
                <v-col cols="12" sm="6">
-                  <h5 class="mt-16">Education</h5>
+                  <h5 class="mt-16">WorkExperience</h5>
                </v-col>
             </v-row>
          </div>

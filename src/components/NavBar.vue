@@ -23,24 +23,22 @@ export default {
          element.scrollIntoView({behavior: "smooth"});
       },
       showAbout() {
-         console.log('AboutSection');
          this.$emit('change-component', 'AboutSection');
-         console.log('AboutSection2');
       },
       showEducation() {
-         this.$emit('change-component', 'Education');
+         this.$emit('change-component', 'EducationSection');
       },
       showProjects() {
-         this.$emit('change-component', 'Projects');
+         this.$emit('change-component', 'ProjectsSection');
       },
       showWorkExperience() {
-         this.$emit('change-component', 'WorkExperience');
+         this.$emit('change-component', 'WorkExperienceSection');
       },
       showResume() {
-         this.$emit('change-component', 'Resume');
+         this.$emit('change-component', 'ResumeSection');
       },
       showContact() {
-         this.$emit('change-component', 'Contact');
+         this.$emit('change-component', 'ContactSection');
       },
    }
 }

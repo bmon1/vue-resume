@@ -1,6 +1,6 @@
 <template>
    <v-app id="home">
-      <NavBar :change-component="currentComponent" />
+      <NavBar @change-component="changeComponent" />
       <v-container fluid>
          <div class="head">
             <v-row>
@@ -25,6 +25,12 @@
             </v-row>
          </div>
          <AboutSection v-if="currentComponent === 'AboutSection'" />
+         <EducationSection v-if="currentComponent === 'EducationSection'" />
+         <ProjectsSection v-if="currentComponent === 'ProjectsSection'" />
+         <WorkExperienceSection v-if="currentComponent === 'WorkExperienceSection'" />
+         <ResumeSection v-if="currentComponent === 'ResumeSection'" />
+         <ContactSection v-if="currentComponent === 'ContactSection'" />
+         
       </v-container>
    </v-app>
 </template>
@@ -34,16 +40,26 @@ import { defineComponent } from 'vue';
 
 import NavBar from '../components/NavBar.vue';
 import AboutSection from '../components/AboutSection.vue';
+import EducationSection from '../components/EducationSection.vue';
+import ProjectsSection from '../components/ProjectsSection.vue';
+import WorkExperienceSection from '../components/WorkExperienceSection.vue';
+import ResumeSection from '../components/ResumeSection.vue';
+import ContactSection from '../components/ContactSection.vue';
 
 export default defineComponent ({
    name: 'HomeView',
    components: {
       NavBar,
       AboutSection,
+      EducationSection,
+      ProjectsSection,
+      WorkExperienceSection,
+      ResumeSection,
+      ContactSection,
    },
    data() {
     return {
-      currentComponent: 'AboutSection',
+      currentComponent: null,
     };
   },
   methods: {
