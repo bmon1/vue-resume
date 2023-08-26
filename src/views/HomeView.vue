@@ -1,6 +1,6 @@
 <template>
    <v-app id="home">
-      <NavBar />
+      <NavBar :change-component="currentComponent" />
       <v-container fluid>
          <div class="head">
             <v-row>
@@ -12,11 +12,19 @@
                      <v-btn tile dark class="text-green mt-8" variant="outlined">Contact Me</v-btn>
                   </div>
                </v-col>
-               <v-col cols="7">
-
+               <v-col cols="2">
+                  <div style="position: absolute; z-index: 10; bottom:0; left:0; right:0">
+                     <v-icon>fas fa-angle-double-down</v-icon>
+                  </div>
+               </v-col>
+               <v-col cols="5">
+                  <div style="position: relative; z-index: 10;" class="mt-16">
+                     <v-img src="me.jpg" contain max-height="300"></v-img>
+                  </div>
                </v-col>
             </v-row>
          </div>
+         <AboutSection v-if="currentComponent === 'AboutSection'" />
       </v-container>
    </v-app>
 </template>
@@ -24,13 +32,25 @@
 <script>
 import { defineComponent } from 'vue';
 
-import NavBar from '@/components/NavBar.vue'
+import NavBar from '../components/NavBar.vue';
+import AboutSection from '../components/AboutSection.vue';
 
 export default defineComponent ({
    name: 'HomeView',
    components: {
       NavBar,
+      AboutSection,
    },
+   data() {
+    return {
+      currentComponent: 'AboutSection',
+    };
+  },
+  methods: {
+    changeComponent(componentName) {
+      this.currentComponent = componentName;
+    },
+  },
 });
 </script>
 
@@ -67,4 +87,5 @@ export default defineComponent ({
    background: black;
    transform: skew(0deg, -6deg)
 }
+
 </style>
