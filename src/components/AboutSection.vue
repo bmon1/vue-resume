@@ -5,7 +5,7 @@
          <v-row>
             <v-col cols="12" sm="6">
                <div class="egg">
-                  <v-img src="fam.jpg"></v-img>
+                  <v-img src="fam1.jpg"></v-img>
                </div>
             </v-col>
             <v-col cols="12" sm="6">

@@ -30,7 +30,6 @@
          <WorkExperienceSection v-if="currentComponent === 'WorkExperienceSection'" />
          <ResumeSection v-if="currentComponent === 'ResumeSection'" />
          <ContactSection v-if="currentComponent === 'ContactSection'" />
-         
       </v-container>
    </v-app>
 </template>

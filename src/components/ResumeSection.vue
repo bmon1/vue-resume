@@ -3,32 +3,32 @@
       <v-col cols="12" class="mt-16" id="about">
          <div>
             <v-row>
-               <v-col cols="12" sm="6">
-                  <div class="egg">
-                     <v-img src="fam.jpg"></v-img>
+               <v-col justify="center" align="center">
+                  <div class="resume-title">
+                     <h1 class="mt-16 mb-16">Resume</h1>
                   </div>
-               </v-col>
-               <v-col cols="12" sm="6">
-                  <h5 class="mt-16">Resume</h5>
+                  <div class="resume" style="width: 80%; height: 1100px; border: 3px solid black;">
+                     <v-img src="resume.jpg"></v-img>
+                  </div>
                </v-col>
             </v-row>
          </div>
       </v-col>
    </div>
-   </template>
+</template>
    
-   <script>
-   
-   </script>
-   
-   <style>
-   .egg {
-      display: block;
-      margin-left: 100px;
-      margin-top: 50px;
-      width: 356px;
-      height: 300px;
-      background:  #58d68d;
-      border-radius: 50% 50% 50% 50% / 60% 60% 40% 0%;
-   }
-   </style>
+<script>
+
+</script>
+
+<style>
+.egg {
+   display: block;
+   margin-left: 100px;
+   margin-top: 50px;
+   width: 356px;
+   height: 300px;
+   background:  #58d68d;
+   border-radius: 50% 50% 50% 50% / 60% 60% 40% 0%;
+}
+</style>

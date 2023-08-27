@@ -3,13 +3,25 @@
       <v-col cols="12" class="mt-16" id="about">
          <div>
             <v-row>
-               <v-col cols="12" sm="6">
+               <v-col cols="12" sm="6" justify="center" align="center">
                   <div class="egg">
-                     <v-img src="fam.jpg"></v-img>
+                     <v-img src="fam1.jpg"></v-img>
                   </div>
                </v-col>
-               <v-col cols="12" sm="6">
-                  <h5 class="mt-16">Education</h5>
+               <v-col cols="12" sm="6" justify="center" align="center">
+                  <div class="education-title">
+                     <h1 class="mt-16">Education</h1>
+                     <br />
+                  </div>
+                  <div class="education-experience">
+                     <h3>Texas State University</h3>
+                     <p>B.S. in Computer Science from Texas State University</p>
+                     <p>(3.11 GPA) May 2022</p>
+                     <br />
+                     <h3>ATP Flight School</h3>
+                     <p>Private and Instrument Pilot's Licenses</p>
+                     <p>April 2013</p>
+                  </div>
                </v-col>
             </v-row>
          </div>
