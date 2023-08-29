@@ -5,10 +5,10 @@
       </div>
       <v-row  class="d-flex-col">
          <v-col class="contact_input" justify="center" align="center">
-            <h3>Contact Me</h3>
-            <h6 style="color: black;">monroebranden1@gmail.com</h6>
+            <h2>Contact Me</h2>
+            <h3 style="color: black;">monroebranden1@gmail.com</h3>
 
-            <form ref="form" @submit.prevent="sendEmail">
+            <form ref="form" class="mt-6" @submit.prevent="sendEmail">
                <div>
                   <input type="text" name="name" placeholder="Your Name" required>
                </div>
@@ -22,17 +22,17 @@
                   <textarea name="message" rows="4" placeholder="Send me a message"></textarea>
                </div>
                <div>
-                  <button type="submit">Send Message</button>
+                  <v-btn type="submit">Send Message</v-btn>
                </div>
             </form>
          </v-col>
          <v-col>
-            <div class="socials">
-               <ul style="list-style-type: none;">
-                  <li><a href="https://www.linkedin.com/in/branden-monroe-b75543102/"><image class="linkedin" src="linkedin.png" alt="Linkedin png" /></a></li>
-                  <li><a href="https://github.com/bmon1"><image class="github" src="github.png" alt="Github png" /></a></li>
-                  <li><a href="https://www.facebook.com/branden.monroe.79/"><image class="facebook" src="facebook.png" alt="Facebook png" /></a></li>
-                  <li><a href="Branden-Monroe-Resume.docx"><image class="resume-icon" src="resume-icon.png" alt="Resume png" /></a></li>
+            <div class="socials mt-8">
+               <ul style="list-style-type: none; margin-top: 4rem;">
+                  <li><a href="https://www.linkedin.com/in/branden-monroe-b75543102/"><v-img class="linkedin icon" src="linkedin.png" alt="Linkedin png" /></a></li>
+                  <li><a href="https://github.com/bmon1"><v-img class="github icon" src="github.png" alt="Github png" /></a></li>
+                  <li><a href="https://www.facebook.com/branden.monroe.79/"><v-img class="facebook icon" src="facebook.png" alt="Facebook png" /></a></li>
+                  <li><a href="resume.jpg"><v-img class="resume-icon icon" src="resume-icon.png" alt="Resume png" /></a></li>
                </ul>
             </div>
          </v-col>
@@ -69,6 +69,11 @@ export default {
   border-radius: 5px;
   padding: 20px;
   width: 50%;
+}
+
+.icon {
+   height: 5rem;
+   margin-top: 1rem;
 }
 
 .contact_input {
