@@ -1,12 +1,9 @@
 <template>
    <div class="container  mt-16">
-      <div>
-         
-      </div>
       <v-row  class="d-flex-col">
          <v-col class="contact_input" justify="center" align="center">
             <h2>Contact Me</h2>
-            <h3 style="color: black;">monroebranden1@gmail.com</h3>
+            <h3 style="color: black; font-weight: normal; margin-top: 4px;">monroebranden1@gmail.com</h3>
 
             <form ref="form" class="mt-6" @submit.prevent="sendEmail">
                <div>
@@ -68,7 +65,7 @@ export default {
   text-align: center;
   border-radius: 5px;
   padding: 20px;
-  width: 50%;
+  width: 65%;
 }
 
 .icon {
