@@ -19,7 +19,7 @@
                   <textarea name="message" rows="4" placeholder="Send me a message"></textarea>
                </div>
                <div>
-                  <v-btn type="submit">Send Message</v-btn>
+                  <v-btn type="submit" >Send Message</v-btn>
                </div>
             </form>
          </v-col>

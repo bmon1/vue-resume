@@ -7,7 +7,7 @@
                   <div class="resume-title">
                      <h1 class="mt-16 mb-16">Resume</h1>
                   </div>
-                  <div class="resume" style="width: 80%; height: 1100px; border: 3px solid black;">
+                  <div class="resume" style="width: 80%; height: 1100px;">
                      <v-img src="resume.jpg"></v-img>
                   </div>
                </v-col>

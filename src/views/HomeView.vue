@@ -8,8 +8,8 @@
                   <div class="intro mt-16" style="position: relative">
                      <h1 class="text-green">Hello,</h1>
                      <h1 class="text-white">I'm Branden Monroe</h1>
-                     <h2 class="text-white">Software Developer with QA Experience</h2>
-                     <v-btn tile dark class="text-green mt-8" variant="outlined">Contact Me</v-btn>
+                     <h2 class="text-white">Software Developer / QA Engineer</h2>
+                     <v-btn tile dark class="text-green mt-8" variant="outlined" @click="currentComponent = 'ContactSection'">Contact Me</v-btn>
                   </div>
                </v-col>
                <v-col cols="2">

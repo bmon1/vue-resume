@@ -2,7 +2,6 @@
    <v-app-bar app color="black" dark flat class="px-10">
       <v-row justify="space-between">
          <v-btn >Branden</v-btn>
-         <v-btn text @click="scroll('home')" class="text-green">Home</v-btn>
          <v-btn text @click="showAbout" class="text-green">About</v-btn>
          <v-btn text @click="showEducation" class="text-green">Education</v-btn>
          <v-btn text @click="showProjects" class="text-green">Projects</v-btn>
@@ -18,10 +17,6 @@
 <script>
 export default {
    methods: {
-      scroll(refName) {
-         const element = document.getElementById(refName);
-         element.scrollIntoView({behavior: "smooth"});
-      },
       showAbout() {
          this.$emit('change-component', 'AboutSection');
       },
