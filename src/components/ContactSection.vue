@@ -24,11 +24,10 @@
             </form>
          </v-col>
          <v-col>
-            <div class="socials mt-8">
-               <ul style="list-style-type: none; margin-top: 4rem;">
+            <div class="socials">
+               <ul style="list-style-type: none; margin-top: 8rem;">
                   <li><a href="https://www.linkedin.com/in/branden-monroe-b75543102/"><v-img class="linkedin icon" src="linkedin.png" alt="Linkedin png" /></a></li>
                   <li><a href="https://github.com/bmon1"><v-img class="github icon" src="github.png" alt="Github png" /></a></li>
-                  <li><a href="https://www.facebook.com/branden.monroe.79/"><v-img class="facebook icon" src="facebook.png" alt="Facebook png" /></a></li>
                   <li><a href="resume.jpg"><v-img class="resume-icon icon" src="resume-icon.png" alt="Resume png" /></a></li>
                </ul>
             </div>
@@ -41,9 +40,7 @@
 import emailjs from 'emailjs-com';
 
 export default {
-   // service id: service_m1o5f1l
-   // template id: template_rj2gxg7
-   // user id (public key:): latW17PX1RK2FmGR_ 
+ 
   methods: {
     sendEmail() {
       emailjs.sendForm('service_m1o5f1l', 'template_rj2gxg7', this.$refs.form, 'latW17PX1RK2FmGR_')

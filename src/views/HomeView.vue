@@ -1,5 +1,5 @@
 <template>
-   <v-app id="home">
+   <v-app id="home" style="background-color: lightgray;">
       <NavBar @change-component="changeComponent" />
       <v-container fluid>
          <div class="head">
@@ -24,12 +24,14 @@
                </v-col>
             </v-row>
          </div>
-         <AboutSection v-if="currentComponent === 'AboutSection'" />
-         <EducationSection v-if="currentComponent === 'EducationSection'" />
-         <ProjectsSection v-if="currentComponent === 'ProjectsSection'" />
-         <WorkExperienceSection v-if="currentComponent === 'WorkExperienceSection'" />
-         <ResumeSection v-if="currentComponent === 'ResumeSection'" />
-         <ContactSection v-if="currentComponent === 'ContactSection'" />
+         <div>
+            <AboutSection v-if="currentComponent === 'AboutSection'" />
+            <EducationSection v-if="currentComponent === 'EducationSection'" />
+            <ProjectsSection v-if="currentComponent === 'ProjectsSection'" />
+            <WorkExperienceSection v-if="currentComponent === 'WorkExperienceSection'" />
+            <ResumeSection v-if="currentComponent === 'ResumeSection'" />
+            <ContactSection v-if="currentComponent === 'ContactSection'" />
+         </div>
       </v-container>
    </v-app>
 </template>
