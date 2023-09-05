@@ -7,11 +7,14 @@
                <br />
             </div>
             <v-row class="mb-16 mt-8">
-               <v-col cols="12" sm="6" class="d-flex justify-center align-center">
+               <v-col cols="12" sm="6" class="d-flex align-center">
                   <div class="atmosphere-experience">
                      <h3>Atmosphere TV</h3>
                      <p>QA Engineer</p>
                      <p>June 2022 - August 2023</p>
+                  </div>
+                  <div>
+                     <v-img src="atmosphere-logo.jpg"></v-img>
                   </div>
                </v-col>
                <v-col cols="12" sm="6" justify="center">
@@ -29,11 +32,14 @@
             </v-row>
             <v-divider :thickness="4" class="border-opacity-60" inset></v-divider>
             <v-row class="mt-16">
-               <v-col cols="12" sm="6" class="d-flex justify-center align-center">
+               <v-col cols="12" sm="6" class="d-flex align-center">
                   <div class="ella-experience">
                      <h3>Hotel Ella</h3>
                      <p>Valet Supervisor</p>
                      <p>2017 - 2022</p>
+                  </div>
+                  <div>
+                     <v-img src="hotel-ella.jpg"></v-img>
                   </div>
                </v-col>
                <v-col cols="12" sm="6" justify="center">
@@ -62,13 +68,8 @@
    </script>
    
    <style>
-   .egg {
-      display: block;
-      margin-left: 100px;
-      margin-top: 50px;
+   v-img {
       width: 356px;
       height: 300px;
-      background:  #58d68d;
-      border-radius: 50% 50% 50% 50% / 60% 60% 40% 0%;
    }
    </style>

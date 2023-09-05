@@ -22,13 +22,5 @@
 </script>
 
 <style>
-.egg {
-   display: block;
-   margin-left: 100px;
-   margin-top: 50px;
-   width: 356px;
-   height: 300px;
-   background:  #58d68d;
-   border-radius: 50% 50% 50% 50% / 60% 60% 40% 0%;
-}
+
 </style>
