@@ -25,10 +25,10 @@
             </v-row>
          </div>
          <div>
-            <AboutSection v-if="currentComponent === 'AboutSection'" />
+            <AboutSection v-if="currentComponent === 'AboutSection' || currentComponent === null" />
+            <WorkExperienceSection v-if="currentComponent === 'WorkExperienceSection'" />
             <EducationSection v-if="currentComponent === 'EducationSection'" />
             <ProjectsSection v-if="currentComponent === 'ProjectsSection'" />
-            <WorkExperienceSection v-if="currentComponent === 'WorkExperienceSection'" />
             <ResumeSection v-if="currentComponent === 'ResumeSection'" />
             <ContactSection v-if="currentComponent === 'ContactSection'" />
          </div>
