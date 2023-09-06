@@ -3,18 +3,19 @@
       <v-col cols="12" class="mt-16" id="about">
          <div>
             <div class="work-title" align="center">
-               <h1 class="mt-16">Work Experience</h1>
+               <h1 class="mt-16 mb-16">Work Experience</h1>
                <br />
             </div>
+            <v-divider :thickness="4" class="border-opacity-60" inset></v-divider>
             <v-row class="mb-16 mt-8">
-               <v-col cols="12" sm="6" class="d-flex align-center">
+               <v-col cols="3">
+                  <v-img src="atmosphere-logo.jpg"  style="height: 200px; width 250px; margin-top: 16px;"></v-img>
+               </v-col>
+               <v-col cols="3" class="mt-16">
                   <div class="atmosphere-experience">
                      <h3>Atmosphere TV</h3>
                      <p>QA Engineer</p>
                      <p>June 2022 - August 2023</p>
-                  </div>
-                  <div>
-                     <v-img src="atmosphere-logo.jpg"></v-img>
                   </div>
                </v-col>
                <v-col cols="12" sm="6" justify="center">
@@ -32,14 +33,14 @@
             </v-row>
             <v-divider :thickness="4" class="border-opacity-60" inset></v-divider>
             <v-row class="mt-16">
-               <v-col cols="12" sm="6" class="d-flex align-center">
+               <v-col cols="3">
+                  <v-img src="hotel-ella.jpg" style="height: 200px; width 250px; margin-top: 16px;"></v-img>
+               </v-col>
+               <v-col cols="3" class="mt-16">
                   <div class="ella-experience">
                      <h3>Hotel Ella</h3>
                      <p>Valet Supervisor</p>
                      <p>2017 - 2022</p>
-                  </div>
-                  <div>
-                     <v-img src="hotel-ella.jpg"></v-img>
                   </div>
                </v-col>
                <v-col cols="12" sm="6" justify="center">
@@ -68,8 +69,5 @@
    </script>
    
    <style>
-   v-img {
-      width: 356px;
-      height: 300px;
-   }
+
    </style>
