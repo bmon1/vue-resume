@@ -18,7 +18,7 @@
                      <p>June 2022 - August 2023</p>
                   </div>
                </v-col>
-               <v-col cols="12" sm="6" justify="center">
+               <v-col cols="6" justify="center">
                   <ul>
                      <li>Identified programming errors and inefficiencies in code submitted for testing.</li>
                      <li>Regularly completed software developer tasks including front-end programming projects (Vue.js) and back-end projects (PHP).</li>
@@ -43,7 +43,7 @@
                      <p>2017 - 2022</p>
                   </div>
                </v-col>
-               <v-col cols="12" sm="6" justify="center">
+               <v-col cols="6" justify="center">
                   <ul>
                      <li>Awarded Hotel Ella Front House Employee of the Year.</li>
                      <li>Managed all valet services and valet staff at Hotel Ella.</li>

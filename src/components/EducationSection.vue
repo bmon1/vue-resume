@@ -2,17 +2,18 @@
    <div>
       <v-col cols="12" class="mt-16" id="about">
          <div>
-            <v-row>
-               <v-col cols="12" sm="6" justify="center" align="center">
+            <div class="education-title">
+               <h1 class="mt-16 mb-16" align="center">Education</h1>
+               <br />
+            </div>
+            <v-divider :thickness="4" class="border-opacity-60" inset></v-divider>
+            <v-row class="mt-16"  justify="center" align="center">
+               <v-col cols="12" sm="6">
                   <div class="egg">
                      <v-img src="fam1.jpg"></v-img>
                   </div>
                </v-col>
                <v-col cols="12" sm="6" justify="center" align="center">
-                  <div class="education-title">
-                     <h1 class="mt-16">Education</h1>
-                     <br />
-                  </div>
                   <div class="education-experience">
                      <h3>Texas State University</h3>
                      <p>B.S. in Computer Science from Texas State University</p>

@@ -1,11 +1,23 @@
 <template>
+   <div style="background-color: black; margin: 0 16px 0">
+      <v-alert
+         v-model="alertVisible"
+         type="success"
+         class="mt-16"
+         closable
+         color="green"
+         variant="outlined"
+         title="Message Sent"
+         text="Thank you for checking out the site. Branden will respond to your message ASAP"
+      ></v-alert>
+   </div>
    <div class="container  mt-16">
       <v-row  class="d-flex-col">
          <v-col class="contact_input" justify="center" align="center">
             <h2>Contact Me</h2>
             <h3 style="color: black; font-weight: normal; margin-top: 4px;">monroebranden1@gmail.com</h3>
 
-            <form ref="form" class="mt-6" @submit.prevent="sendEmail">
+            <form ref="form" class="mt-6">
                <div>
                   <input type="text" name="name" placeholder="Your Name" required>
                </div>
@@ -19,7 +31,7 @@
                   <textarea name="message" rows="4" placeholder="Send me a message"></textarea>
                </div>
                <div>
-                  <v-btn type="submit" >Send Message</v-btn>
+                  <v-btn type="button" @click="sendEmail($event)">Send Message</v-btn>
                </div>
             </form>
          </v-col>
@@ -42,15 +54,28 @@ import emailjs from 'emailjs-com';
 export default {
  
   methods: {
-    sendEmail() {
-      emailjs.sendForm('service_m1o5f1l', 'template_rj2gxg7', this.$refs.form, 'latW17PX1RK2FmGR_')
-        .then(() => {
-          alert('Message sent!');
-        })
-        .catch((error) => {
-          alert('Message not sent: ' + error);
-        }); 
-    }
+      sendEmail(event) {
+         event.preventDefault();
+         emailjs.sendForm('service_m1o5f1l', 'template_rj2gxg7', this.$refs.form, 'latW17PX1RK2FmGR_')
+         .then(() => {
+            alert('Message sent!');
+         })
+         .catch((error) => {
+            alert('Message not sent: ' + error);
+         }); 
+         this.showAlert();
+      },
+      showAlert() {
+         this.alertVisible = true; // Set alertVisible to true to show the alert
+         setTimeout(() => {
+         this.alertVisible = false; // After 5 seconds, hide the alert
+         }, 5000); // 5000 milliseconds = 5 seconds
+      }
+   },
+  data () {
+   return {
+      alertVisible: false,
+   }
   }
 }
 </script>

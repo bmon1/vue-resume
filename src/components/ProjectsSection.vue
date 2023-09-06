@@ -4,8 +4,9 @@
          <div>
             <v-row>
                <v-col cols="12">
-                  <h2 class="mt-16 mb-4" align="center">Projects</h2>
-                  <v-row>
+                  <h1 class="mt-16 mb-16" align="center">Projects</h1>
+                  <v-divider :thickness="4" class="border-opacity-60" inset></v-divider>
+                  <v-row class="mt-16">
                      <v-col cols="4">
                         <v-img class="project_pic" src="Movie_Database_Project_Picture.png"></v-img>
                      </v-col>
@@ -85,15 +86,6 @@
    </script>
    
    <style>
-   .egg {
-      display: block;
-      margin-left: 100px;
-      margin-top: 50px;
-      width: 356px;
-      height: 300px;
-      background:  #58d68d;
-      border-radius: 50% 50% 50% 50% / 60% 60% 40% 0%;
-   }
    .project_description {
       margin-top: 16px;
    }
