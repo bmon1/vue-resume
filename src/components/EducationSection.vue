@@ -14,13 +14,16 @@
                </v-col>
                <v-col cols="12" sm="6" justify="center" align="center">
                   <div class="education-experience">
-                     <h3>Texas State University</h3>
-                     <p>B.S. in Computer Science from Texas State University</p>
-                     <p>(3.11 GPA) May 2022</p>
-                     <br />
-                     <h3>ATP Flight School</h3>
-                     <p>Private and Instrument Pilot's Licenses</p>
-                     <p>April 2013</p>
+                     <div class="mt-16">
+                        <h3>Texas State University</h3>
+                        <p>B.S. in Computer Science from Texas State University</p>
+                        <p>(3.11 GPA) May 2022</p>
+                     </div>
+                     <div class="mt-16">
+                        <h3>ATP Flight School</h3>
+                        <p>Private and Instrument Pilot's Licenses</p>
+                        <p>April 2013</p>
+                     </div>
                   </div>
                </v-col>
             </v-row>
