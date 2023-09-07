@@ -4,7 +4,7 @@
       <v-container fluid>
          <div class="head">
             <v-row>
-               <v-col cols="5">
+               <v-col cols="6">
                   <div class="intro mt-16" style="position: relative">
                      <h1 class="text-green">Hello,</h1>
                      <h1 class="text-white">I'm Branden Monroe</h1>
@@ -12,12 +12,7 @@
                      <v-btn tile dark class="text-green mt-8" variant="outlined" @click="currentComponent = 'ContactSection'">Contact Me</v-btn>
                   </div>
                </v-col>
-               <v-col cols="2">
-                  <div style="position: absolute; z-index: 10; bottom:0; left:0; right:0">
-                     <v-icon>fas fa-angle-double-down</v-icon>
-                  </div>
-               </v-col>
-               <v-col cols="5">
+               <v-col cols="6">
                   <div style="position: relative; z-index: 10;" class="mt-16">
                      <v-img src="me.jpg" contain max-height="300"></v-img>
                   </div>

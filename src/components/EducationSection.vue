@@ -4,7 +4,6 @@
          <div>
             <div class="education-title">
                <h1 class="mt-16 mb-16" align="center">Education</h1>
-               <br />
             </div>
             <v-divider :thickness="4" class="border-opacity-60" inset></v-divider>
             <v-row class="mt-16"  justify="center" align="center">

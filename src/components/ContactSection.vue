@@ -6,7 +6,7 @@
          class="mt-16"
          closable
          color="green"
-         variant="outlined"
+         variant="tonal"
          title="Message Sent"
          text="Thank you for checking out the site. Branden will respond to your message ASAP"
       ></v-alert>
@@ -38,7 +38,7 @@
          <v-col>
             <div class="socials">
                <ul style="list-style-type: none; margin-top: 8rem;">
-                  <li><a href="https://www.linkedin.com/in/branden-monroe-b75543102/"><v-img class="linkedin icon" src="linkedin.png" alt="Linkedin png" /></a></li>
+                  <li><a href="https://www.linkedin.com/in/branden-monroe-b75543102/"><v-img class="linkedin icon" src="linkedin.png" alt="Linkedin png"/></a></li>
                   <li><a href="https://github.com/bmon1"><v-img class="github icon" src="github.png" alt="Github png" /></a></li>
                   <li><a href="resume.jpg"><v-img class="resume-icon icon" src="resume-icon.png" alt="Resume png" /></a></li>
                </ul>
@@ -66,10 +66,10 @@ export default {
          this.showAlert();
       },
       showAlert() {
-         this.alertVisible = true; // Set alertVisible to true to show the alert
+         this.alertVisible = true;
          setTimeout(() => {
-         this.alertVisible = false; // After 5 seconds, hide the alert
-         }, 5000); // 5000 milliseconds = 5 seconds
+         this.alertVisible = false;
+         }, 6000);
       }
    },
   data () {
@@ -109,4 +109,5 @@ input[type=text], [type=email], textarea {
   margin-bottom: 16px;
   resize: vertical;
 }
+
 </style>
