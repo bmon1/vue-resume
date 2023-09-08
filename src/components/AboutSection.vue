@@ -5,12 +5,22 @@
          <h1 class="mt-16 mb-16" justify="center" align="center">About Branden</h1>
          <v-divider :thickness="4" class="border-opacity-60" inset></v-divider>
             <v-row>
-               <v-col class="mt-16" cols="6">
-                  <div class="egg">
-                     <v-img src="fam1.jpg"></v-img>
-                     <v-img src="Chief.png"></v-img>
-                     <v-img src="Simba.png"></v-img>
-                  </div>
+               <v-col class="" cols="6">
+                  <row>
+                     <div class="about_egg">
+                        <v-img src="fam1.jpg" style=""></v-img>
+                     </div>
+                  </row>
+                  <row>
+                     <div class="d-flex mt-12 ml-16">
+                        <div class="chief_egg">
+                           <v-img src="Chief.png"></v-img>
+                        </div>
+                        <div class="simba_egg">
+                           <v-img src="Simba.png"></v-img>
+                        </div>
+                     </div>
+                  </row>
                </v-col>
                <v-col cols="5" class="mt-16 mb-16">
                   <p>
@@ -73,5 +83,30 @@ blockquote:before {
 }
 blockquote p {
   display: inline;
+}
+.about_egg {
+   display: block;
+   margin-left: 220px;
+   margin-top: 50px;
+   width: 356px;
+   height: 300px;
+   background:  #58d68d;
+   border-radius: 50% 50% 50% 50% / 60% 60% 40% 0%;
+}
+.simba_egg {
+   display: block;
+   margin: 0 15px 15px 0;
+   width: 300px;
+   height: 300px;
+   background:  #58d68d;
+   border-radius: 50% 50% 50% 50% / 60% 60% 0% 40%;
+}
+.chief_egg {
+   display: block;
+   margin: 0 15px 15px 0;
+   width: 300px;
+   height: 300px;
+   background:  #58d68d;
+   border-radius: 50% 50% 50% 50% / 60% 60% 40% 0%;
 }
 </style>

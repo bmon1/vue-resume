@@ -1,10 +1,10 @@
 <template>
    <v-app id="home" style="background-color: lightgray;">
       <NavBar @change-component="changeComponent" />
-      <v-container fluid>
+      <v-container fluid  :class="{ 'slide-out': isSlidOut }">
          <div class="head">
             <v-row>
-               <v-col cols="6">
+               <v-col cols="5">
                   <div class="intro mt-16" style="position: relative">
                      <h1 class="text-green">Hello,</h1>
                      <h1 class="text-white">I'm Branden Monroe</h1>
@@ -12,8 +12,14 @@
                      <v-btn tile dark class="text-green mt-8" variant="outlined" @click="currentComponent = 'ContactSection'">Contact Me</v-btn>
                   </div>
                </v-col>
-               <v-col cols="6">
-                  <div style="position: relative; z-index: 10;" class="mt-16">
+               <v-col cols="2">
+                  <div style="position: absolute; z-index: 10; bottom:0; left:0; right:0">
+                     <btn v-if="isSlidOut === true" @click="toggleSlide"><v-icon>fas fa-angle-double-down</v-icon></btn>
+                     <btn v-else @click="toggleSlide"><v-icon>fas fa-angle-double-up</v-icon></btn>
+                  </div>
+               </v-col>
+               <v-col cols="5">
+                  <div style="position: relative; z-index: 10;" class="mt-8">
                      <v-img src="me.jpg" contain max-height="300"></v-img>
                   </div>
                </v-col>
@@ -56,12 +62,23 @@ export default defineComponent ({
    data() {
     return {
       currentComponent: null,
+      isSlidOut: false,
     };
   },
   methods: {
     changeComponent(componentName) {
-      this.currentComponent = componentName;
+      if (this.isSlidOut) {
+         this.toggleSlide();
+         setTimeout(() => {
+            this.currentComponent = componentName;
+         }, 500);
+      } else {
+         this.currentComponent = componentName;
+      }
     },
+    toggleSlide() {
+      this.isSlidOut = !this.isSlidOut;
+   },
   },
 });
 </script>
@@ -78,6 +95,7 @@ export default defineComponent ({
    height: 400px;
    width: 100%;
    color: white;
+   transition: transform 0.5s ease-in-out;
 }
 .head:before {
    content: " ";
@@ -99,14 +117,7 @@ export default defineComponent ({
    background: black;
    transform: skew(0deg, -6deg)
 }
-.egg {
-   display: block;
-   margin-left: 100px;
-   margin-top: 50px;
-   width: 356px;
-   height: 300px;
-   background:  #58d68d;
-   border-radius: 50% 50% 50% 50% / 60% 60% 40% 0%;
+.slide-out {
+   transform: translateY(-300px);
 }
-
 </style>

@@ -6,7 +6,7 @@
                <h1 class="mt-16 mb-16" align="center">Education</h1>
             </div>
             <v-divider :thickness="4" class="border-opacity-60" inset></v-divider>
-            <v-row class="mt-16"  justify="center" align="center">
+            <v-row class="mt-16 ml-16 mr-16"  justify="center" align="center">
                <v-col cols="12" sm="6">
                   <div class="egg">
                      <v-img src="fam1.jpg"></v-img>
