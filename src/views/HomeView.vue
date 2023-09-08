@@ -1,7 +1,7 @@
 <template>
    <v-app id="home" style="background-color: lightgray;">
       <NavBar @change-component="changeComponent" />
-      <v-container fluid  :class="{ 'slide-out': isSlidOut }">
+      <v-container fluid  :class="{ 'slide-out': isSlidOut }" style="transition: transform 0.5s ease-in-out;">
          <div class="head">
             <v-row>
                <v-col cols="5">
@@ -95,7 +95,6 @@ export default defineComponent ({
    height: 400px;
    width: 100%;
    color: white;
-   transition: transform 0.5s ease-in-out;
 }
 .head:before {
    content: " ";
