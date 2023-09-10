@@ -3,6 +3,8 @@ module.exports = defineConfig({
   publicPath: process.env.NODE_ENV === 'production'
     ? '/vue-web-resume/'
     : '/',
+  
+  base: '/vue-resume',
 
   transpileDependencies: true,
 
