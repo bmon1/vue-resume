@@ -4,6 +4,8 @@ module.exports = defineConfig({
     ? '/vue-resume/'
     : '/',
 
+    outputDir: 'dist',
+
   transpileDependencies: true,
 
   pluginOptions: {
