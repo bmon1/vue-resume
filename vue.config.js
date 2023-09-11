@@ -1,6 +1,6 @@
 const { defineConfig } = require('@vue/cli-service')
 module.exports = defineConfig({
-  base: '/vue-resume/',
+  publicPath: '/vue-resume/',
 
   outputDir: 'dist',
 
