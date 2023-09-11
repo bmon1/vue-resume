@@ -1,5 +1,3 @@
-ommented appropriately) and run it to deploy:
-
 #!/usr/bin/env sh
 
 # abort on errors
@@ -22,6 +20,6 @@ git commit -m 'New Deployment'
 # git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git main
 
 # if you are deploying to https://<USERNAME>.github.io/<REPO>
-git push -f git@github.com:bmon1/vue-resume.git master:gh-pages
+git push -f git@github.com:bmon1/vue-resume.git master
 
 cd -
