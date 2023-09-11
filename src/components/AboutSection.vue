@@ -14,7 +14,7 @@
                   <row>
                      <div class="d-flex mt-12 ml-16">
                         <div class="chief_egg">
-                           <v-img src="src/assets/Chief.png"></v-img>
+                           <v-img src="Chief.png"></v-img>
                         </div>
                         <div class="simba_egg">
                            <v-img src="Simba.png"></v-img>
