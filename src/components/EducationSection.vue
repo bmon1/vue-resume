@@ -12,9 +12,9 @@
                      <v-img src="fam1.jpg"></v-img>
                   </div>
                </v-col>
-               <v-col cols="12" sm="6" justify="center" align="center">
+               <v-col cols="12" sm="6" justify="center" align="center" class="mb-16">
                   <div class="education-experience">
-                     <div class="mt-16 mb-16">
+                     <div class="mt-16">
                         <h3>Texas State University</h3>
                         <p>B.S. in Computer Science from Texas State University</p>
                         <p>(3.11 GPA) May 2022</p>
