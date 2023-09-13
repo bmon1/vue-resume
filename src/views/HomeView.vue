@@ -20,7 +20,7 @@
                </v-col>
                <v-col cols="5">
                   <div style="position: relative; z-index: 10;" class="mt-8">
-                     <v-img src="me.jpg" contain max-height="300"></v-img>
+                     <v-img src="me.png" contain max-height="300"></v-img>
                   </div>
                </v-col>
             </v-row>
