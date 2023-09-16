@@ -24,7 +24,7 @@
                      <li>Wrote automated front-end and back-end tests.</li>
                      <li>Contributed to the implementation, testing, release, and maintenance steps of the Software Development Life Cycle.</li>
                      <li>Worked closely with a team of Software Engineers and Product Managers as part of the Scale Team, whose goal was to support rapid growth, onboarding, shipping, and marketing.</li>
-                     <li>Collaborated across teams in an Agile methodology environment to adapt to quicky changing requirements from internal and external stakeholders.</li>
+                     <li>Collaborated across teams in an Agile methodology environment to adapt to quickly changing requirements from internal and external stakeholders.</li>
                      <li>Located, investigated, documented, and resolved bugs in software.</li>
                      <li>Part of the winning Q2 2023 hackathon team using AI to enable curated headlines based on geo targeting.</li>
                   </ul>
