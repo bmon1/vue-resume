@@ -1,7 +1,7 @@
 <template>
    <v-app-bar app color="black" dark flat class="px-10">
       <v-row justify="space-between">
-         <v-btn>Branden</v-btn>
+         <div class="mt-1">Branden</div>
          <v-btn text @click="showAbout" class="text-green">About</v-btn>
          <v-btn text @click="showWorkExperience" class="text-green">Work Experience</v-btn>
          <v-btn text @click="showEducation" class="text-green">Education</v-btn>
