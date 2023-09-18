@@ -100,7 +100,7 @@ export default defineComponent ({
    content: " ";
    position: absolute;
    top: 0;
-   left: 0;
+   left: 1px;
    height: 100%;
    width: 50%;
    background: black;
@@ -110,7 +110,7 @@ export default defineComponent ({
    content: " ";
    position: absolute;
    top: 0;
-   right: 0;
+   right: 1px;
    height: 100%;
    width: 50%;
    background: black;
