@@ -1,5 +1,5 @@
 <template>
-<div>
+<div> 
    <v-col cols="12" class="mt-16" id="about">
       <div>
          <h1 class="mt-16 mb-16" justify="center" align="center">About Branden</h1>
