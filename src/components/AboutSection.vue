@@ -34,7 +34,7 @@
                      &emsp; I've been interested in computer science and technology in general as long as I can remember.
                      In middle school we were told to journal about a subject we wished we understood better.
                      I wished I had a better understanding of how hardware was controlled by software and never
-                     lost that interest. 
+                     lost that interest.
                   </p>
                   <br />
                   <p>
